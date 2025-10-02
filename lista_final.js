@@ -366,6 +366,40 @@
 // const usuario1 = new UsuarioSistema ("aluno@gmail.com", 1234)
 // console.log(usuario1.autenticar("eu@gmail.com", 4321))
 
+////////////////////////////////////////////////////////////
+// CORREÇÃO DO PROFESSOR - EXERCÍCIO 13
+
+// class UsuarioSistema {
+//     #login
+//     #senha
+
+//     constructor (login,senha) {
+//         this.#login = login 
+//         this.#senha = senha 
+//     }
+
+//     autenticar (loginAutenticar, senhaAutenticar) {
+//         if (this.#login == loginAutenticar && this.#senha == senhaAutenticar) {
+//             return `Usuário autenticado!`
+//         } else {
+//             return  `Login ou senha inválido`
+//         }
+//         // Mesma coisa que isso:  return this.#login == loginAutenticar && this.#senha == senhaAutenticar (vai retornar true ou false)
+//     }
+//     alterarSenha (senhaAntiga, senhaNova) {
+//         if (senhaAntiga == this.#senha) {
+//             this.#senha = senhaNova
+//             return `Senha alterada com sucesso!`
+//         } else {
+//             return `Senha incorreta!`
+//         }
+//     }
+// }
+
+// let usuario1 = new UsuarioSistema ("gabriela.c.lima10@aluno.senai.br", "Senh@089")
+// console.log(usuario1.autenticar("gabriela.c.lima10@aluno.senai.br", "Senh@089"))
+// console.log (usuario1.alterarSenha( "Senh@089", "Senha@611"))
+
 
 // Exercício 14 - Crie uma classe Funcionario com atributos nome e salarioBase.
 //Depois crie subclasses:
@@ -373,6 +407,13 @@
 //FuncionarioPJ (sem desconto).
 //Estagiario (desconta 5% de vale transporte).
 //Implemente o método calcularSalarioLiquido() em cada subclasse.
+
+class Funcionario () {
+    constructor (nome, salarioBase) {
+        this.nome = nome
+        this.salarioBase = salarioBase
+    }
+}
 
 
 // Exercício 15 - Crie uma classe Investimento com um método calcularRendimento(valor, meses).Depois crie subclasses:
