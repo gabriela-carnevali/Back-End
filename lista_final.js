@@ -408,13 +408,86 @@
 //Estagiario (desconta 5% de vale transporte).
 //Implemente o método calcularSalarioLiquido() em cada subclasse.
 
-class Funcionario () {
-    constructor (nome, salarioBase) {
-        this.nome = nome
-        this.salarioBase = salarioBase
-    }
-}
+// class Funcionario {
+//     constructor (nome, salarioBase) {
+//         this.nome = nome
+//         this.salarioBase = salarioBase
+//     }
+// }
 
+// class FuncionarioCLT extends Funcionario {
+//     super (nome, salarioBase) {
+//         this.nome = nome
+//         this.salarioBase = salarioBase
+//     }
+//     calcularSalarioLiquido () {
+//         let salarioFinal = (this.salarioBase - this.salarioBase * 10 / 100)  + this.salarioBase * 5 / 100
+//         return `O salário final de ${this.nome} é ${salarioFinal.toFixed(2)}`
+//     }
+// }
+
+// class FuncionarioPJ extends Funcionario {
+//     super (nome, salarioBase) {
+//         this.nome = nome
+//         this.salarioBase = salarioBase
+//     }
+//     calcularSalarioLiquido () {
+//         let salarioFinal = this.salarioBase
+//         return `o salário líquido de ${this.nome} é ${salarioFinal.toFixed(2)}`
+//     }
+// }
+
+// class Estagiario extends Funcionario {
+//     super (nome, salarioBase) {
+//         this.nome = nome
+//         this.salarioBase = salarioBase
+//     }
+//     calcularSalarioLiquido () {
+//         let salarioFinal = this.salarioBase - this.salarioBase * 5 / 100
+//         return `O salário final de ${this.nome} é de ${salarioFinal.toFixed(2)}`
+//     }
+// }
+
+// let funcionarioclt1 = new FuncionarioCLT ("Pedro", 1500)
+// console.log(funcionarioclt1.calcularSalarioLiquido())
+// let funcionariopj1 = new FuncionarioPJ ("Leonardo", 10000)
+// console.log(funcionariopj1.calcularSalarioLiquido())
+// let estagiario1 = new Estagiario ("Lucas", 2000)
+// console.log(estagiario1.calcularSalarioLiquido())
+
+//////////////////////////////////////////////////////////////////////////////
+// CORREÇÃO DO PROFESSOR - EXERCÍCIO 14
+
+// class Funcionario {
+//     constructor (nome, salarioBase) {
+//         this.nome = nome 
+//         this.salarioBase = salarioBase
+//     }
+// }
+// class FuncionarioCLT extends Funcionario {
+//     constructor (nome,salarioBase) {
+//         super(nome, salarioBase)
+//     }
+//     calcularSalarioLiquido() {
+//         return this.salarioBase * 0.9 + this.salarioBase * 0.05
+//     }
+// }
+// class FuncionarioPJ extends Funcionario {
+//     calcularSalarioLiquido() {
+//         return this.salarioBase
+//     }
+// }
+// class Estagiario extends Funcionario {
+//     calcularSalarioLiquido() {
+//         return this.salarioBase * 0.95
+//     }
+// }
+// let f1 = new FuncionarioCLT ("Celso", 5000)
+// let f2 = new FuncionarioPJ ("Marlon", 30000)
+// let f3 = new Estagiario ("Daniel", 50000)
+// console.log(`${f1.nome}, seu salário é R$${f1.calcularSalarioLiquido()}`)
+// console.log(`${f2.nome}, seu salário é R$${f2.calcularSalarioLiquido()}`)
+// console.log(`${f3.nome}, seu salário é R$${f3.calcularSalarioLiquido()}`)
 
 // Exercício 15 - Crie uma classe Investimento com um método calcularRendimento(valor, meses).Depois crie subclasses:
 //RendaFixa (rende 0,7% ao mês).
