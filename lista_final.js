@@ -512,13 +512,13 @@
 //Implemente um sistema que crie várias aplicações e compare o rendimento após 12 meses.
 
 
-const estoque = {
-                caixa: 50
-                palete: 10
-                empilhadeira: 2
-}
+// const estoque = {
+//                 caixa: 50
+//                 palete: 10
+//                 empilhadeira: 2
+// }
 
 
-function verificarEstoque (produto, quantidade, callback) {
-    return callback (produto, quantidade)
-}
+// function verificarEstoque (produto, quantidade, callback) {
+//     return callback (produto, quantidade)
+// }
