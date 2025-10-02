@@ -510,3 +510,15 @@
 //TesouroDireto (0,8% ao mês, mas cobra 10% de IR sobre o lucro).
 //Criptomoeda (variação aleatória entre -20% e +25% ao mês).
 //Implemente um sistema que crie várias aplicações e compare o rendimento após 12 meses.
+
+
+const estoque = {
+                caixa: 50
+                palete: 10
+                empilhadeira: 2
+}
+
+
+function verificarEstoque (produto, quantidade, callback) {
+    return callback (produto, quantidade)
+}
